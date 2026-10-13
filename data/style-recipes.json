@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "authorship": "Original design recipes included with this skill; not scraped from external sites.",
+  "recipes": [
+    {
+      "id": "editorial-warmth",
+      "name": "Editorial Warmth",
+      "keywords": [
+        "warm",
+        "editorial",
+        "serif",
+        "storytelling",
+        "premium",
+        "content"
+      ],
+      "ideal_for": [
+        "publication",
+        "boutique",
+        "culture",
+        "nonprofit"
+      ],
+      "thesis": "An inviting print-journal feel with generous margins and asymmetrical image-led sections.",
+      "layout": "Two-column narratives; large pull quotes; slim metadata rail; editorial feature blocks.",
+      "typography": "High-contrast display serif plus clean grotesk for controls.",
+      "palette": {
+        "bg": "#F6F0E7",
+        "surface": "#FFFDF8",
+        "text": "#29241F",
+        "accent": "#8E472F",
+        "border": "#D6C8B9"
+      },
+      "surfaces": "Paper-like surfaces, hairline separators, modest image shadows.",
+      "motion": "Subtle image fade and restrained scroll reveal.",
+      "risks_to_check": [
+        "body-contrast",
+        "oversized-heading-on-phone",
+        "image-licenses"
+      ]
+    },
+    {
+      "id": "civic-clarity",
+      "name": "Civic Clarity",
+      "keywords": [
+        "accessible",
+        "government",
+        "clear",
+        "trust",
+        "informational",
+        "forms"
+      ],
+      "ideal_for": [
+        "civic",
+        "education",
+        "health-information",
+        "public-service"
+      ],
+      "thesis": "Direct, calm language and visibly navigable structure communicate reliability.",
+      "layout": "Single dominant task column; clear page sections; persistent breadcrumb/help cues.",
+      "typography": "Friendly humanist sans for all UI; strong numeral treatment.",
+      "palette": {
+        "bg": "#F9FAF7",
+        "surface": "#FFFFFF",
+        "text": "#172C34",
+        "accent": "#0A6073",
+        "border": "#C7D2D3"
+      },
+      "surfaces": "High-contrast inputs, visible separators, restrained elevation.",
+      "motion": "Immediate functional feedback only.",
+      "risks_to_check": [
+        "avoid-corporate-stiffness",
+        "touch-targets",
+        "plain-language"
+      ]
+    },
+    {
+      "id": "quiet-workspace",
+      "name": "Quiet Workspace",
+      "keywords": [
+        "productivity",
+        "saas",
+        "calm",
+        "software",
+        "workspace",
+        "minimal"
+      ],
+      "ideal_for": [
+        "dashboard",
+        "internal-tool",
+        "project-management"
+      ],
+      "thesis": "Reduce visual noise so important work, not chrome, stays in focus.",
+      "layout": "Adaptive side navigation, content work area, subtle top command bar.",
+      "typography": "Neutral contemporary sans with tabular numeric data.",
+      "palette": {
+        "bg": "#F4F5F3",
+        "surface": "#FFFFFF",
+        "text": "#242C28",
+        "accent": "#466950",
+        "border": "#DCE3DD"
+      },
+      "surfaces": "Very light neutral panels, selective borders, low shadows.",
+      "motion": "Motion only for state transitions; compact duration.",
+      "risks_to_check": [
+        "hidden-actions",
+        "dense-mobile-nav",
+        "status-color-only"
+      ]
+    },
+    {
+      "id": "precision-grid",
+      "name": "Precision Grid",
+      "keywords": [
+        "data",
+        "technical",
+        "developer",
+        "monospace",
+        "dense",
+        "industrial"
+      ],
+      "ideal_for": [
+        "developer-tool",
+        "analytics",
+        "operations"
+      ],
+      "thesis": "Explicit grids and crisp alignment make complex data legible and trustworthy.",
+      "layout": "Dense 12-column desktop layout, modular status panels, mobile priority stack.",
+      "typography": "Compact sans and monospace for labels, ids and quantitative data.",
+      "palette": {
+        "bg": "#111619",
+        "surface": "#192126",
+        "text": "#F1F6F4",
+        "accent": "#85E8BF",
+        "border": "#354247"
+      },
+      "surfaces": "Thin borders and strong focus outlines; no floating decoration.",
+      "motion": "Discrete, functional feedback; no ambient effects.",
+      "risks_to_check": [
+        "low-contrast-secondary",
+        "too-small-labels",
+        "code-font-abuse"
+      ]
+    },
+    {
+      "id": "playful-utility",
+      "name": "Playful Utility",
+      "keywords": [
+        "consumer",
+        "playful",
+        "colorful",
+        "friendly",
+        "mobile",
+        "casual"
+      ],
+      "ideal_for": [
+        "consumer-app",
+        "events",
+        "community"
+      ],
+      "thesis": "Delight users while keeping primary actions understandable and easy to reach.",
+      "layout": "Oversized primary action, simple cards, contextual illustrations, shallow navigation.",
+      "typography": "Rounded humanist sans with expressive heavy display weight.",
+      "palette": {
+        "bg": "#FFF9E6",
+        "surface": "#FFFFFF",
+        "text": "#24213A",
+        "accent": "#EF5B3F",
+        "border": "#E6D9BE"
+      },
+      "surfaces": "Rounded shapes, limited bright color accents, large iconography.",
+      "motion": "Microinteraction at completion; honor reduced-motion.",
+      "risks_to_check": [
+        "childish-tone",
+        "contrast",
+        "decorative-overload"
+      ]
+    },
+    {
+      "id": "atelier-contrast",
+      "name": "Atelier Contrast",
+      "keywords": [
+        "fashion",
+        "luxury",
+        "minimal",
+        "photography",
+        "gallery"
+      ],
+      "ideal_for": [
+        "portfolio",
+        "fashion",
+        "premium-service"
+      ],
+      "thesis": "Use bold type, carefully chosen photography and restraint to communicate confidence.",
+      "layout": "Full-bleed hero paired with whitespace, modular gallery, low-noise navigation.",
+      "typography": "Sculptural display serif combined with editorial sans captions.",
+      "palette": {
+        "bg": "#FAF9F6",
+        "surface": "#F2F0EA",
+        "text": "#181818",
+        "accent": "#6D4F35",
+        "border": "#CAC7C0"
+      },
+      "surfaces": "Flat editorial surfaces, carefully cropped imagery, no excessive ornament.",
+      "motion": "Slow but optional transitions; maintain immediate navigation.",
+      "risks_to_check": [
+        "stock-photos",
+        "font-loading",
+        "form-clarity"
+      ]
+    },
+    {
+      "id": "marketplace-signal",
+      "name": "Marketplace Signal",
+      "keywords": [
+        "commerce",
+        "marketplace",
+        "filters",
+        "trust",
+        "search"
+      ],
+      "ideal_for": [
+        "ecommerce",
+        "directory",
+        "booking"
+      ],
+      "thesis": "Make filtering, comparative information and confidence signals effortless.",
+      "layout": "Persistent search; filter sidebar desktop/drawer mobile; readable listing grid.",
+      "typography": "Neutral UI sans with firm prices and helpful typographic contrast.",
+      "palette": {
+        "bg": "#F8FAFB",
+        "surface": "#FFFFFF",
+        "text": "#16263A",
+        "accent": "#146A7A",
+        "border": "#D1DDE2"
+      },
+      "surfaces": "Clean item boundaries, consistent cards, accessible filter chips.",
+      "motion": "Fast filter updates with visible feedback.",
+      "risks_to_check": [
+        "fake-reviews",
+        "price-ambiguity",
+        "complex-mobile-filters"
+      ]
+    },
+    {
+      "id": "night-studio",
+      "name": "Night Studio",
+      "keywords": [
+        "dark",
+        "creative",
+        "portfolio",
+        "immersive",
+        "studio"
+      ],
+      "ideal_for": [
+        "creative-studio",
+        "developer-portfolio",
+        "media"
+      ],
+      "thesis": "A dark stage emphasizes selective highlights and purposeful composition.",
+      "layout": "Bold hero with asymmetric work tiles and clear project narrative.",
+      "typography": "Distinct geometric headline with highly readable body sans.",
+      "palette": {
+        "bg": "#0D1012",
+        "surface": "#181D20",
+        "text": "#F3F4F1",
+        "accent": "#E2A96C",
+        "border": "#384145"
+      },
+      "surfaces": "Large quiet dark zones, precise contrast boundaries, spotlight imagery.",
+      "motion": "Soft reveal and hover preview only with alternatives.",
+      "risks_to_check": [
+        "text-contrast",
+        "performance",
+        "mouse-only-interactions"
+      ]
+    },
+    {
+      "id": "friendly-finance",
+      "name": "Friendly Finance",
+      "keywords": [
+        "fintech",
+        "data",
+        "money",
+        "approachable",
+        "charts"
+      ],
+      "ideal_for": [
+        "finance-dashboard",
+        "budgeting",
+        "reporting"
+      ],
+      "thesis": "Translate intimidating numbers into understandable next actions.",
+      "layout": "Summary first, explanations beside charts, direct drill-in affordances.",
+      "typography": "Modern sans with tabular numbers and readable annotations.",
+      "palette": {
+        "bg": "#F1F5F0",
+        "surface": "#FFFFFF",
+        "text": "#173125",
+        "accent": "#2F6A50",
+        "border": "#C9D9CE"
+      },
+      "surfaces": "Soft green-gray surfaces, disciplined badges, high data ink ratio.",
+      "motion": "Trend chart updates without flashy number scrambling.",
+      "risks_to_check": [
+        "implied-accuracy",
+        "chart-misleading-scales",
+        "red-green-dependence"
+      ]
+    },
+    {
+      "id": "nature-fieldbook",
+      "name": "Nature Fieldbook",
+      "keywords": [
+        "nature",
+        "outdoors",
+        "organic",
+        "handmade",
+        "warm"
+      ],
+      "ideal_for": [
+        "travel",
+        "outdoors",
+        "food",
+        "sustainable-brand"
+      ],
+      "thesis": "Organic textures and practical information combine warmth with clarity.",
+      "layout": "Image-led journal rhythm plus well-structured utility panels.",
+      "typography": "Soft serif display and readable sans body with organic curves.",
+      "palette": {
+        "bg": "#F2EFE4",
+        "surface": "#FAF8F0",
+        "text": "#25352A",
+        "accent": "#8B542E",
+        "border": "#BEC6B3"
+      },
+      "surfaces": "Warm paper tones, editorial blocks, subtle rule work.",
+      "motion": "Gentle movement; prioritize offline legibility.",
+      "risks_to_check": [
+        "photo-rights",
+        "overly-rustic-ui",
+        "subtle-primary-actions"
+      ]
+    },
+    {
+      "id": "neo-brutalist-cards",
+      "name": "Neo-Brutalist Cards",
+      "keywords": [
+        "bold",
+        "neo-brutalist",
+        "playful",
+        "graphic",
+        "youth"
+      ],
+      "ideal_for": [
+        "creative-brand",
+        "event",
+        "community"
+      ],
+      "thesis": "Unexpected hard-edged contrasts convey energy without hiding the task.",
+      "layout": "Blocky layout with large headings, distinct steps, staggered highlights.",
+      "typography": "Wide heavy sans with strong hierarchy and concise labels.",
+      "palette": {
+        "bg": "#FFF9EC",
+        "surface": "#FFFFFF",
+        "text": "#171717",
+        "accent": "#FFBF47",
+        "border": "#171717"
+      },
+      "surfaces": "Hard borders, offset shadows, limited flat colors.",
+      "motion": "Snap transitions and strong focus states.",
+      "risks_to_check": [
+        "sensory-overload",
+        "over-decoration",
+        "long-copy-fit"
+      ]
+    },
+    {
+      "id": "museum-archive",
+      "name": "Museum Archive",
+      "keywords": [
+        "archive",
+        "historical",
+        "collections",
+        "culture",
+        "serif"
+      ],
+      "ideal_for": [
+        "museum",
+        "library",
+        "archives"
+      ],
+      "thesis": "Let content provenance and considered typography carry visual authority.",
+      "layout": "Category indexes, date hierarchy, layered story pages, accessible discovery controls.",
+      "typography": "Old-style serif titles with humanist sans navigation.",
+      "palette": {
+        "bg": "#EDE8DE",
+        "surface": "#F9F6F0",
+        "text": "#332B26",
+        "accent": "#6E4538",
+        "border": "#CBC2B5"
+      },
+      "surfaces": "Quiet rules, archival frames, measured spatial rhythm.",
+      "motion": "Minimal; avoid hiding contextual information.",
+      "risks_to_check": [
+        "legibility",
+        "copyright-media",
+        "filter-discovery"
+      ]
+    },
+    {
+      "id": "bright-education",
+      "name": "Bright Education",
+      "keywords": [
+        "education",
+        "learning",
+        "cheerful",
+        "progress",
+        "gamified"
+      ],
+      "ideal_for": [
+        "learning-app",
+        "course-platform",
+        "kids-and-family"
+      ],
+      "thesis": "A welcoming learning environment makes progress and next actions explicit.",
+      "layout": "Lesson path + progress summary + immediate continue action.",
+      "typography": "Friendly rounded sans; generous body readability.",
+      "palette": {
+        "bg": "#F7FAFE",
+        "surface": "#FFFFFF",
+        "text": "#1E3045",
+        "accent": "#2666A5",
+        "border": "#C8D6E7"
+      },
+      "surfaces": "Low-elevation cards and selective illustrative elements.",
+      "motion": "Positive completion feedback; reduced-motion alternatives.",
+      "risks_to_check": [
+        "gamification-distraction",
+        "color-as-only-state",
+        "age-appropriateness"
+      ]
+    },
+    {
+      "id": "monochrome-editor",
+      "name": "Monochrome Editor",
+      "keywords": [
+        "content-first",
+        "writer",
+        "editor",
+        "minimal",
+        "monochrome"
+      ],
+      "ideal_for": [
+        "writing-tool",
+        "knowledge-base",
+        "notes"
+      ],
+      "thesis": "The canvas is for content; controls retreat until relevant.",
+      "layout": "Centered editor with contextual tools and discoverable structure rail.",
+      "typography": "Reading-oriented serif or neutral sans; distinguish interface labels.",
+      "palette": {
+        "bg": "#FDFCF9",
+        "surface": "#FFFFFF",
+        "text": "#202124",
+        "accent": "#3B4256",
+        "border": "#E1E3E4"
+      },
+      "surfaces": "Near-white surfaces and subtle divisions, visible selection highlights.",
+      "motion": "No ornamental animations; fast cursor response.",
+      "risks_to_check": [
+        "hidden-toolbar",
+        "text-scaling",
+        "keyboard-discoverability"
+      ]
+    },
+    {
+      "id": "retro-tech",
+      "name": "Retro Tech",
+      "keywords": [
+        "retro",
+        "computer",
+        "terminal",
+        "industrial",
+        "nostalgic"
+      ],
+      "ideal_for": [
+        "gaming",
+        "event",
+        "experimental-portfolio"
+      ],
+      "thesis": "Period-inspired constraints become a memorable interface without losing modern usability.",
+      "layout": "Grid overlays, status strips, oversized functional modules.",
+      "typography": "Monospace accents + robust sans for long-form reading.",
+      "palette": {
+        "bg": "#142018",
+        "surface": "#203326",
+        "text": "#E9F6DC",
+        "accent": "#E9BC64",
+        "border": "#4D6954"
+      },
+      "surfaces": "Subtle screen-like texture (optional), crisp strokes, strong contrast.",
+      "motion": "Limited blink effects; never animate essential content.",
+      "risks_to_check": [
+        "low-contrast",
+        "tiny-monospace",
+        "flashing-effects"
+      ]
+    },
+    {
+      "id": "airy-wellness",
+      "name": "Airy Wellness",
+      "keywords": [
+        "wellness",
+        "relaxing",
+        "soft",
+        "airy",
+        "supportive"
+      ],
+      "ideal_for": [
+        "wellness",
+        "hospitality",
+        "coaching"
+      ],
+      "thesis": "Create calm reassurance while retaining direct, comprehensible actions.",
+      "layout": "Breathing space, simple onboarding, concise cards with clear CTA.",
+      "typography": "Elegant but legible serif accents and simple body sans.",
+      "palette": {
+        "bg": "#F8F5F0",
+        "surface": "#FFFFFF",
+        "text": "#273B38",
+        "accent": "#427A72",
+        "border": "#DDE7E1"
+      },
+      "surfaces": "Low-pressure color fields, minimal dividers, soft corners.",
+      "motion": "Quiet fades respecting motion settings.",
+      "risks_to_check": [
+        "pale-contrast",
+        "vague-cta",
+        "stock-meditation-tropes"
+      ]
+    }
+  ]
+}

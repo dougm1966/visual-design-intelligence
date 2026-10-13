@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="editorial">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Visual Design Intelligence — Interactive Style Directions (fictional demo)</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;--bg:#f3eee4;--surface:#fffaf0;--surface2:#ede5d7;--ink:#282620;--muted:#696254;--accent:#95513e;--border:#c7b8a3;--radius:3px;--shadow:none;--display:Georgia,Times,serif;--space:28px;--card-pad:24px;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);transition:background .25s,color .25s}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}button:disabled{cursor:wait;opacity:.65}
+a{color:inherit}.page{max-width:1280px;margin:auto;padding:28px clamp(16px,3vw,48px) 80px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--border)}.mark{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}.mark-icon{width:35px;height:35px;display:grid;place-items:center;background:var(--accent);color:var(--bg);font-size:21px;border-radius:var(--radius)}.switcher{display:flex;flex-wrap:wrap;gap:6px;padding:6px;border:1px solid var(--border);border-radius:12px}.switcher button,.filter button{border:1px solid transparent;border-radius:8px;padding:9px 14px;color:var(--ink);background:transparent}.switcher button[aria-pressed=true],.filter button[aria-pressed=true]{background:var(--accent);color:var(--bg)}.demo-label{font-size:12px;color:var(--muted)}.hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(220px,.8fr);gap:36px;padding:58px 0 36px;align-items:end}.hero h1{font-family:var(--display);font-weight:400;letter-spacing:-.058em;line-height:1.03;font-size:clamp(46px,6vw,86px);margin:8px 0 14px;max-width:840px}.hero p{font-size:clamp(16px,1.6vw,19px);line-height:1.7;max-width:59ch;color:var(--muted);margin:0}.date-stamp{border-top:2px solid var(--accent);padding-top:15px;align-self:center;font-size:13px;line-height:1.7;color:var(--muted)}.date-stamp strong{display:block;font:500 clamp(24px,2.9vw,36px) var(--display);color:var(--ink)}.dashboard{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,330px);gap:25px;align-items:start}.panel{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);padding:var(--card-pad);box-shadow:var(--shadow)}.panel-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.panel-header h2{font-family:var(--display);font-weight:500;font-size:clamp(24px,2.3vw,34px);margin:0}.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:24px}.metric{padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}.metric .num{font-family:var(--display);font-size:clamp(30px,3.2vw,48px);line-height:1.05}.metric .small{color:var(--muted);font-size:12px;margin-top:7px}.filter{display:flex;gap:2px;border-bottom:1px solid var(--border);padding:8px 0;margin:18px 0 5px}.filter button{border-radius:0;padding:9px 12px}.filter button[aria-pressed=true]{background:transparent;color:var(--accent);border-bottom:2px solid var(--accent)}.tasks{padding:0;margin:0;list-style:none}.task{padding:18px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}.task:last-child{border:0}.task input{width:21px;height:21px;margin:2px 0 0;accent-color:var(--accent);flex-shrink:0;cursor:pointer}.task-main{flex:1;min-width:0}.task-title{font-weight:650;font-size:15px}.task.is-done .task-title{text-decoration:line-through;color:var(--muted)}.task-meta{font-size:12px;color:var(--muted);margin-top:5px}.pill{background:var(--surface2);border:1px solid var(--border);padding:5px 8px;border-radius:999px;font-size:11px;white-space:nowrap}.sidebar{display:grid;gap:20px}.sidebar p{font-size:14px;line-height:1.65;color:var(--muted)}.add-form{display:grid;gap:10px;margin-top:18px}.add-form label{font-size:13px;font-weight:700}.add-form input{min-width:0;width:100%;padding:13px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--ink)}.primary{padding:13px 18px;border:1px solid var(--accent);background:var(--accent);color:var(--bg);border-radius:var(--radius);font-weight:750}.notice{min-height:20px;font-size:12px;margin-top:10px;color:var(--muted)}.quote{font-family:var(--display);font-size:clamp(24px,2.3vw,30px);line-height:1.25;letter-spacing:-.025em;margin:12px 0 8px}.legend{font-size:12px;color:var(--muted);margin-top:26px;line-height:1.65}.empty{padding:35px 0;color:var(--muted);font-size:14px}
+html[data-theme="precision"]{--bg:#0d1315;--surface:#172024;--surface2:#243338;--ink:#eff6f2;--muted:#9eb3b2;--accent:#9ef6ce;--border:#34454a;--radius:0px;--shadow:none;--display:ui-monospace,SFMono-Regular,Consolas,monospace;--space:16px;--card-pad:20px;color-scheme:dark}
+html[data-theme="precision"] .page{max-width:1380px}html[data-theme="precision"] .hero{grid-template-columns:minmax(0,1fr) minmax(190px,.45fr);padding:38px 0 28px}html[data-theme="precision"] .hero h1{font-weight:700;letter-spacing:-.075em;line-height:1;font-size:clamp(40px,5vw,72px)}html[data-theme="precision"] .dashboard{grid-template-columns:minmax(0,1fr) 300px;gap:12px}html[data-theme="precision"] .panel{border-width:1px}html[data-theme="precision"] .metric-grid{gap:8px;margin-bottom:12px}html[data-theme="precision"] .metric{padding:18px}html[data-theme="precision"] .metric .num{font-size:40px}html[data-theme="precision"] .eyebrow{letter-spacing:.07em}html[data-theme="precision"] .switcher{border-radius:0}html[data-theme="precision"] .switcher button{border-radius:0}html[data-theme="precision"] .primary{color:#0b1513}html[data-theme="precision"] .mark-icon{color:#0b1513}html[data-theme="precision"] .switcher button[aria-pressed=true]{color:#0b1513}
+html[data-theme="playful"]{--bg:#faf0da;--surface:#fffdf6;--surface2:#f7dfe2;--ink:#272240;--muted:#685c73;--accent:#6745db;--border:#272240;--radius:20px;--shadow:4px 5px 0 #272240;--display:system-ui,-apple-system,"Segoe UI",sans-serif;--card-pad:24px;color-scheme:light}
+html[data-theme="playful"] .hero{grid-template-columns:minmax(0,1fr) minmax(160px,.48fr)}html[data-theme="playful"] .hero h1{font-weight:900;letter-spacing:-.075em;font-size:clamp(48px,7vw,92px)}html[data-theme="playful"] .date-stamp{border:2px solid var(--border);border-radius:30px;padding:18px;box-shadow:var(--shadow);transform:rotate(3deg);background:#f9de5c}html[data-theme="playful"] .date-stamp strong{font-weight:900}html[data-theme="playful"] .panel,html[data-theme="playful"] .metric{border-width:2px}html[data-theme="playful"] .metric:nth-child(1){background:#fde58a}html[data-theme="playful"] .metric:nth-child(2){background:#e0d3ff}html[data-theme="playful"] .metric:nth-child(3){background:#caf4d9}html[data-theme="playful"] .metric .num{font-weight:850}html[data-theme="playful"] .primary{background:#6745db;color:white;border:2px solid var(--border);box-shadow:2px 3px 0 var(--border)}html[data-theme="playful"] .switcher button[aria-pressed=true]{color:white}html[data-theme="playful"] .filter button[aria-pressed=true]{color:var(--accent)}
+@media(max-width:850px){.dashboard{grid-template-columns:1fr}.sidebar{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr;gap:18px;padding:35px 0 25px}.date-stamp{max-width:320px}.page{padding:16px 16px 60px}html[data-theme="precision"] .dashboard{grid-template-columns:1fr}}
+@media(max-width:580px){.toolbar{align-items:flex-start}.switcher{width:100%;justify-content:space-between}.switcher button{flex:1;min-width:0;padding:10px 6px;font-size:12px}.metric-grid{gap:6px}.metric{padding:11px}.metric .num{font-size:29px}.metric .small{font-size:11px}.sidebar{grid-template-columns:1fr}.hero h1{font-size:clamp(40px,11vw,62px)}.hero p{font-size:16px}.panel{padding:17px}html[data-theme="precision"] .metric .num{font-size:29px}html[data-theme="playful"] .hero{grid-template-columns:1fr}html[data-theme="playful"] .date-stamp{transform:none}}
+@media(prefers-reduced-motion:reduce){body{transition:none}*{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="toolbar">
+  <div><div class="mark"><span class="mark-icon" aria-hidden="true">✦</span> Northstar Notes</div><div class="demo-label">Fictional interface · Design directions demonstration</div></div>
+  <nav class="switcher" aria-label="Choose visual direction">
+    <button type="button" data-mode="editorial" aria-pressed="true">01 · Editorial</button>
+    <button type="button" data-mode="precision" aria-pressed="false">02 · Precision</button>
+    <button type="button" data-mode="playful" aria-pressed="false">03 · Playful</button>
+  </nav>
+</header>
+<section class="hero" aria-labelledby="hero-title">
+  <div><div class="eyebrow">Make room for good work</div><h1 id="hero-title">A clearer day begins here.</h1><p>One approachable place to see what's important, finish what matters, and celebrate small wins.</p></div>
+  <div class="date-stamp"><span class="eyebrow">Today in focus</span><strong>Make progress.</strong> A few thoughtful steps can move a whole project forward.</div>
+</section>
+<div class="metric-grid" aria-label="Summary metrics">
+  <div class="metric"><div class="num" id="total-metric">4</div><div class="small">Total tasks</div></div>
+  <div class="metric"><div class="num" id="pending-metric">3</div><div class="small">Still to do</div></div>
+  <div class="metric"><div class="num" id="done-metric">1</div><div class="small">Completed</div></div>
+</div>
+<main class="dashboard">
+<section class="panel" aria-labelledby="task-title">
+  <div class="panel-header"><div><div class="eyebrow">Your focus list</div><h2 id="task-title">A little at a time.</h2></div><span class="pill" id="task-count">3 remaining</span></div>
+  <div class="filter" role="group" aria-label="Filter tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="pending" aria-pressed="false">To do</button><button type="button" data-filter="done" aria-pressed="false">Completed</button></div>
+  <ul id="task-list" class="tasks"></ul>
+</section>
+<aside class="sidebar">
+  <section class="panel" aria-labelledby="add-title"><div class="eyebrow">Keep moving</div><h2 id="add-title" class="quote">What matters next?</h2><p>Add an idea to your list. No login, API, or external service—this demo stores changes only until the page refreshes.</p><form class="add-form" id="new-task-form"><label for="new-task">Task name</label><input id="new-task" name="task" required maxlength="70" placeholder="e.g., Review the first draft" autocomplete="off"><button class="primary" type="submit">+ Add a task</button></form><div class="notice" id="message" role="status" aria-live="polite"></div></section>
+  <section class="panel"><div class="eyebrow">A design experiment</div><p class="quote">Same tasks. Three different visual stories.</p><p>Switch styles above, complete an item, or create a task. Each direction keeps the same functionality but changes its visual language and layout priorities.</p></section>
+</aside>
+</main>
+<footer class="legend">Prototype only · Fictional data · No external network requests · No production system</footer>
+</div>
+<script>
+(()=>{
+  'use strict';
+  let tasks=[{id:1,title:'Outline the product story',group:'Planning',done:true},{id:2,title:'Gather three relevant examples',group:'Research',done:false},{id:3,title:'Compare the visual directions',group:'Design',done:false},{id:4,title:'Write a short handoff note',group:'Delivery',done:false}];
+  let filter='all';let nextId=5;
+  const list=document.querySelector('#task-list'),status=document.querySelector('#message');
+  const escapeHtml=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function render(){
+    const done=tasks.filter(t=>t.done).length;
+    document.querySelector('#total-metric').textContent=tasks.length;
+    document.querySelector('#done-metric').textContent=done;
+    document.querySelector('#pending-metric').textContent=tasks.length-done;
+    document.querySelector('#task-count').textContent=(tasks.length-done)+' remaining';
+    const shown=tasks.filter(t=>filter==='all'||(filter==='done' ? t.done:!t.done));
+    list.innerHTML=shown.length?shown.map(t=>`<li class="task ${t.done?'is-done':''}"><input type="checkbox" id="task-${t.id}" data-id="${t.id}" ${t.done?'checked':''} aria-label="Mark ${escapeHtml(t.title)} ${t.done?'not complete':'complete'}"><div class="task-main"><label class="task-title" for="task-${t.id}">${escapeHtml(t.title)}</label><div class="task-meta">${escapeHtml(t.group)}</div></div><span class="pill">${t.done?'Done':'Open'}</span></li>`).join(''):'<li class="empty">No items match this view. Choose another filter or add a task.</li>';
+  }
+  document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{
+    document.documentElement.dataset.theme=b.dataset.mode;
+    document.querySelectorAll('[data-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+    status.textContent=`${b.textContent.replace(/^\d+\s*·\s*/, '')} direction selected.`;
+  }));
+  document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{
+    filter=b.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+    render();
+  }));
+  list.addEventListener('change',event=>{
+    if(!event.target.matches('input[data-id]'))return;
+    const target=tasks.find(t=>t.id===Number(event.target.dataset.id));
+    if(target){target.done=event.target.checked;render();status.textContent=`${target.title} marked ${target.done?'complete':'to do'}.`;}
+  });
+  document.querySelector('#new-task-form').addEventListener('submit',e=>{
+    e.preventDefault(); const input=document.querySelector('#new-task'); const title=input.value.trim();
+    if(!title){status.textContent='Enter a task name first.';return;}
+    tasks.push({id:nextId++,title,group:'New',done:false}); input.value='';filter='all';
+    document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter==='all')));
+    render();status.textContent=`Added ${title}.`;input.focus();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
